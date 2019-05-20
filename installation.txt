@@ -1,0 +1,14 @@
+psql:
+
+create user test_user;
+create database test_db owner test_user;
+alter user test_user with password 'test_password';
+grant all privileges on database test_db to test_user;
+
+laravel
+
+- configure db connection in config/database.php (if You use different db config then above)
+- in project folder:
+    php artisan migrate:fresh
+    php serve
+
