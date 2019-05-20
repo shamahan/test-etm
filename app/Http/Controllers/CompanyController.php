@@ -99,7 +99,7 @@ class CompanyController extends Controller
         if (empty($company)) {
             return response()->json(['success' => false, 'error' => 'Company not found']);
         }
-        $user = User::where(['UserID' => $id])->first();
+        $user = User::where(['UserID' => $uid])->first();
         if (empty($user)) {
             return response()->json(['success' => false, 'error' => 'User not found']);
         }
@@ -113,7 +113,7 @@ class CompanyController extends Controller
         if (empty($company)) {
             return response()->json(['success' => false, 'error' => 'Company not found']);
         }
-        $user = User::where(['UserID' => $id])->first();
+        $user = User::where(['UserID' => $uid])->first();
         if (empty($user)) {
             return response()->json(['success' => false, 'error' => 'User not found']);
         }

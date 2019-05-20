@@ -1,0 +1,65 @@
+Common response format:
+
+success result: {"success": true, "result": { DATA }}
+failed result: {"success": false, "error": "error message"}
+
+Get all companies
+GET /companies
+params: none
+
+Get company by ID
+GET /companies/{id}
+params: none
+
+Get users in company
+GET /companies/{id}/users
+params: none
+
+Create new company
+POST /companies/create
+params: 
+    CompanyName - string
+
+Change company
+POST /companies/update/{id}
+params: 
+    CompanyName - string
+
+Delete company
+DELETE /companies/delete/{id}
+params: none
+
+Add user to company
+POST /companies/{id}/user/{uid}
+params: none
+
+Remove user from company
+DELETE /companies/{id}/user/{uid}
+params: none
+
+Get all users
+GET /users
+params: none
+
+Get user by id
+GET /users/{id}
+params: none
+
+Get companies by UserID
+GET /users/{id}/companies
+params: none
+
+Create new user
+POST /users/create
+params: 
+    UserName - string
+    CompanyID - string
+
+Change user
+POST /users/update/{id}
+params: 
+    UserName - string
+
+Delete user
+DELETE /users/delete/{id}
+params: none
