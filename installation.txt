@@ -7,7 +7,9 @@ grant all privileges on database test_db to test_user;
 
 laravel:
 
-- configure db connection in config/database.php (if You use different db config then above)
+- clone project from github
+    git clone https://github.com/shamahan/test-etm.git
+- configure db connection in config/database.php (if You use different db config)
 - in project folder:
     php artisan migrate:fresh
     php artisan serve
