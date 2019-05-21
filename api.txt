@@ -53,7 +53,7 @@ Create new user
 POST /users/create
 params: 
     UserName - string
-    CompanyID - string
+    CompanyID - int
 
 Change user
 POST /users/update/{id}
